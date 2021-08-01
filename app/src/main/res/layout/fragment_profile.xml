@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    tools:context=".Fragments.ProfileFragment">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_person_black_24dp"
+        android:contentDescription="@string/app_name"/>
+    <TextView
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/email"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/checkinBtn"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check in"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:background="@color/colorAccent"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv_latitude"
+        android:textSize="20sp"
+        android:clickable="false"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitude:"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/tv_longhitud"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:textSize="20sp" />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/logoutBtn"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        />
+
+</LinearLayout>
